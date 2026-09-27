@@ -9,13 +9,13 @@ GEMINI_API_KEY = 'AQ.Ab8RN6KgrTCaHrE7EjsSIf7nIhV7Fb44qwK-KRl1gRHR1tkJiQ'
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
 
-# Gemini modelini ayarlıyoruz (Koçluk karakteri veriyoruz)
+# Gemini modelini ayarlıyoruz
 generation_config = {
     "temperature": 0.7,
 }
+
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash-latest"
-)
+    model_name="gemini-1.5-flash",
     generation_config=generation_config,
     system_instruction="Sen profesyonel, motive edici, samimi ve bilgili bir kişisel spor ve beslenme koçusun. Kullanıcılara antrenman, kalori takibi, beslenme ve sağlıklı yaşam konularında rehberlik ediyorsun. Türkçe yanıtlar veriyorsun."
 )
