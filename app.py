@@ -4,7 +4,7 @@ import google.generativeai as genai
 
 # Bot ve Gemini API Ayarları
 TELEGRAM_TOKEN = '8947672500:AAEz13FwQC_IEhTOLIvtcZhoJ6ui98VwHqA'
-GEMINI_API_KEY = 'AQ.Ab8RN6KgrTCaHrE7EjsSIf7nIhV7Fb44qwK-KRl1gRHR1tkJiQ' 
+GEMINI_API_KEY = 'AQ.Ab8RN6Jee0yeHCpvauhuEXJSzeBQ4ZmnPM16PrLBaX7Xv2D8FQ' 
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
