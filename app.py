@@ -14,7 +14,8 @@ generation_config = {
     "temperature": 0.7,
 }
 model = genai.GenerativeModel(
-    model_name="gemini-pro",
+    model_name="gemini-1.5-flash-latest"
+)
     generation_config=generation_config,
     system_instruction="Sen profesyonel, motive edici, samimi ve bilgili bir kişisel spor ve beslenme koçusun. Kullanıcılara antrenman, kalori takibi, beslenme ve sağlıklı yaşam konularında rehberlik ediyorsun. Türkçe yanıtlar veriyorsun."
 )
